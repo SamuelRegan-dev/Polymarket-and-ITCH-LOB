@@ -1,18 +1,12 @@
-//
-// Created by samue on 28/08/2026.
-//
-
 // Fetch_Orders.h
 //this is designed so that the websocket is pluggable and message direction is fixed - designed as a general websockets over TCP Solution
 //using templates because it lets the compiler inline call instead of runtime lookup (few nanoseconds difference), also good shape for pluggability/versatility of fetch_orders tool
 
 /*
  * PROCESS:
- * -------------
- *
  * setting up the connection {
- *     DNS resolution
- *     TCP handshake
+     * DNS resolution
+     * TCP handshake
      * Initiate SNI handshake
      * Initiate TLS handshake
      * Initiate SSL handshake
@@ -21,8 +15,8 @@
  * }
  * starting the loop to keep the connection alive
  * actually sending the data finally
- *
  */
+
 #pragma once
 
 #include <boost/beast/ssl.hpp>
